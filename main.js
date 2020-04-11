@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function(){
     let errorModal = document.getElementById('modal');
     let errorModalMessage = document.getElementById('modal-message');
     if(errorStatus){
+      errorModal.className = ''
       errorModalMessage = errorMessage;
       setTimeout(setErrorModal, 5000)
     } else {

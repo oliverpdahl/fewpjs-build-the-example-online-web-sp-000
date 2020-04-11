@@ -20,8 +20,8 @@ document.addEventListener("DOMContentLoaded", function(){
   
   let posts = document.getElementsByClassName('media-post')
   function setHeart(post){
-    let heartGlyph = post.getElementsByClassName('like-glyph');
-    let heartContainer = post.getElementsByClassName('like');
+    let heartGlyph = post.getElementsByClassName('like-glyph')[0];
+    let heartContainer = post.getElementsByClassName('like')[0];
     heartContainer.addEventListener('click', () =>{
       mimicServerCall()
       .then(() => {

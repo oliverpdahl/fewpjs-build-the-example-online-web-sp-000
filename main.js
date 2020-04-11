@@ -19,9 +19,12 @@ document.addEventListener("DOMContentLoaded", function(){
   }
   
   function flipHeart(heart){
-     if(heart.className == 'activated-hear'){
-       heart.className = ''
-       heart.innerText = EMPTY_HEART
+     if(heart.className == 'activated-heart'){
+       heart.className = '';
+       heart.innerText = EMPTY_HEART;
+     } else {
+       heart.className = 'activated-heart';
+       heart.innerText = FULL_HEART;
      }
   }
   

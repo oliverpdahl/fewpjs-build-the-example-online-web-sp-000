@@ -28,8 +28,7 @@ document.addEventListener("DOMContentLoaded", function(){
         console.log('worked')
       })
       .catch((error) => {
-        console.log(error)
-        setErrorModal(error.message)
+        setErrorModal(error)
       })
     })
   }

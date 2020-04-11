@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function(){
     let heartContainer = post.getElementsByClassName('like');
     mimicServerCall()
     .then(() => {
-      
+      console.log('worked')
     })
     .catch((error) => {
       setErrorModal(error.message)

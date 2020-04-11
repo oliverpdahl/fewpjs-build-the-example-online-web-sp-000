@@ -18,7 +18,8 @@ document.addEventListener("DOMContentLoaded", function(){
     errorStatus = !errorStatus
   }
   
-  let heart = document.getElementById('')
+  let posts = document.getElementsByClassName('media-post')
+  
 })
 
 

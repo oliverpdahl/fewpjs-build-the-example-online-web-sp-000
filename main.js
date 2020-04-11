@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function(){
     let errorModalMessage = document.getElementById('modal-message');
     if(errorStatus){
       errorModalMessage = errorMessage;
-      setTimeout(setErrorModal, )
+      setTimeout(setErrorModal, 5000, '')
     } else {
       errorModal.className = 'hidden';
     }

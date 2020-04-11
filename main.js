@@ -30,6 +30,8 @@ document.addEventListener("DOMContentLoaded", function(){
       setErrorModal(error.message)
     })
   }
+  
+  setHeart(posts[0])
 })
 
 

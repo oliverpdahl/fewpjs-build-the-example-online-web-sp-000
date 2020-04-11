@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function(){
   function setErrorModal(errorMessage = ''){
     let errorModal = document.getElementById('modal');
     let errorModalMessage = document.getElementById('modal-message');
+    errorStatus = !errorStatus
     if(errorStatus){
       errorModal.className = ''
       errorModalMessage.innerText = errorMessage;
@@ -15,7 +16,6 @@ document.addEventListener("DOMContentLoaded", function(){
     } else {
       errorModal.className = 'hidden';
     }
-    errorStatus = !errorStatus
   }
   
   let posts = document.getElementsByClassName('media-post')

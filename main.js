@@ -22,12 +22,14 @@ document.addEventListener("DOMContentLoaded", function(){
   function setHeart(post){
     let heartGlyph = post.getElementsByClassName('like-glyph');
     let heartContainer = post.getElementsByClassName('like');
-    mimicServerCall()
-    .then(() => {
-      console.log('worked')
-    })
-    .catch((error) => {
-      setErrorModal(error.message)
+    heartContainer.addEventListener('click', () =>{
+          mimicServerCall()
+          .then(() => {
+            console.log('worked')
+          })
+          .catch((error) => {
+            setErrorModal(error.message)
+          })
     })
   }
   

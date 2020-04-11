@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function(){
     let errorModal = document.getElementById('modal')
     let errorModalMessage = document.getElementById('modal-message')
     if(errorStatus){
-      errorModalM
+      errorModalMessage = error
     } else {
       errorModal.className = 'hidden'
     }

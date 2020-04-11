@@ -16,6 +16,8 @@ document.addEventListener("DOMContentLoaded", function(){
     }
     errorStatus = !errorStatus
   }
+  
+  setErrorModal('Im here for 5 4 3 2 1')
 })
 
 

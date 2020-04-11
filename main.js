@@ -18,6 +18,10 @@ document.addEventListener("DOMContentLoaded", function(){
     }
   }
   
+  function flipHeart(heart){
+     
+  }
+  
   let posts = document.getElementsByClassName('media-post')
   function setHeartLike(post){
     let heartGlyph = post.getElementsByClassName('like-glyph')[0];

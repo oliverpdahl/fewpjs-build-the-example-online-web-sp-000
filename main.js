@@ -19,13 +19,13 @@ document.addEventListener("DOMContentLoaded", function(){
   }
   
   let posts = document.getElementsByClassName('media-post')
-  function setHeart(post){
+  function setHeartLike(post){
     let heartGlyph = post.getElementsByClassName('like-glyph')[0];
     let heartContainer = post.getElementsByClassName('like')[0];
     heartContainer.addEventListener('click', () =>{
       mimicServerCall()
       .then(() => {
-        console.log('worked')
+        
       })
       .catch((error) => {
         setErrorModal(error)
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function(){
   }
   
   setErrorModal()
-  setHeart(posts[0])
+  setHeartLike(posts[0])
 })
 
 

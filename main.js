@@ -5,13 +5,14 @@ let errorStatus = false
 
 // Your JavaScript code goes here!
 document.addEventListener("DOMContentLoaded", function(){
-  function setErrorModal(){
-    let errorModal = document.getElementById
+  function setErrorModal(error){
+    let errorModal = document.getElementById('modal')
     if(errorStatus){
       
     } else {
-      
+      errorModal.className
     }
+    errorStatus = !errorStatus
   }
 })
 

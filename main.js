@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function(){
     heartContainer.addEventListener('click', () =>{
       mimicServerCall()
       .then(() => {
-        
+        flipHeart(heartGlyph);
       })
       .catch((error) => {
         setErrorModal(error)

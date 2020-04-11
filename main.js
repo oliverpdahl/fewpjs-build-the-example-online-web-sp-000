@@ -44,7 +44,9 @@ document.addEventListener("DOMContentLoaded", function(){
   }
   
   setErrorModal()
-  setHeartLike(posts[0])
+  for(const post of posts){
+    setHeartLike(post)
+  }
 })
 
 

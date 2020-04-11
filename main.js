@@ -1,7 +1,7 @@
 // Defining text characters for the empty and full hearts for you to use later.
 const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
-let errorStatus = false
+let errorStatus = true
 
 // Your JavaScript code goes here!
 document.addEventListener("DOMContentLoaded", function(){
@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", function(){
     })
   }
   
+  setErrorModal()
   setHeart(posts[0])
 })
 

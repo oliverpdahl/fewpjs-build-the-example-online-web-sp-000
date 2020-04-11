@@ -7,8 +7,9 @@ let errorStatus = false
 document.addEventListener("DOMContentLoaded", function(){
   function setErrorModal(error){
     let errorModal = document.getElementById('modal')
+    let errorModalMessage = document.getElementById('modal-message')
     if(errorStatus){
-      
+      errorModalM
     } else {
       errorModal.className = 'hidden'
     }

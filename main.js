@@ -19,7 +19,9 @@ document.addEventListener("DOMContentLoaded", function(){
   }
   
   let posts = document.getElementsByClassName('media-post')
-  
+  function setHeart(post){
+    let heart = post.getElementsByClassName('')
+  }
 })
 
 

@@ -5,12 +5,12 @@ let errorStatus = false
 
 // Your JavaScript code goes here!
 document.addEventListener("DOMContentLoaded", function(){
-  function setErrorModal(errorMessage){
+  function setErrorModal(errorMessage = ''){
     let errorModal = document.getElementById('modal');
     let errorModalMessage = document.getElementById('modal-message');
     if(errorStatus){
       errorModalMessage = errorMessage;
-      setTimeout(setErrorModal, 5000, '')
+      setTimeout(setErrorModal, 5000)
     } else {
       errorModal.className = 'hidden';
     }

@@ -23,13 +23,13 @@ document.addEventListener("DOMContentLoaded", function(){
     let heartGlyph = post.getElementsByClassName('like-glyph');
     let heartContainer = post.getElementsByClassName('like');
     heartContainer.addEventListener('click', () =>{
-          mimicServerCall()
-          .then(() => {
-            console.log('worked')
-          })
-          .catch((error) => {
-            setErrorModal(error.message)
-          })
+      mimicServerCall()
+      .then(() => {
+        console.log('worked')
+      })
+      .catch((error) => {
+        setErrorModal(error.message)
+      })
     })
   }
   

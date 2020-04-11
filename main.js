@@ -19,7 +19,10 @@ document.addEventListener("DOMContentLoaded", function(){
   }
   
   function flipHeart(heart){
-     
+     if(heart.className == 'activated-hear'){
+       heart.className = ''
+       heart.innerText = EMPTY_HEART
+     }
   }
   
   let posts = document.getElementsByClassName('media-post')

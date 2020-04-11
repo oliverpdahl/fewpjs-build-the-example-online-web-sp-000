@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function(){
     if(errorStatus){
       
     } else {
-      errorModal.className
+      errorModal.className = 'hidden'
     }
     errorStatus = !errorStatus
   }
